@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./static/styles/style-home.css" />
+    <title>Sage Welte</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title">
+        <div class="name">Sage Welte</div>
+        <div class="links">
+          <div class="github">
+            <a href="http://www.github.com/theoriginalwelte">
+              <img src="./static/icons/github.png" class="github"
+            /></a>
+          </div>
+          &nbsp &nbsp &nbsp
+          <div class="email">
+            <a href="./contact"><img src="./static/icons/mail.png" /></a>
+          </div>
+          &nbsp &nbsp &nbsp
+          <div class="resume">
+            <a
+              href="https://drive.google.com/file/d/1foLhoI0_ICS75IY-zPSe4j2XhyzfAq40/view?usp=sharing"
+              ><img src="./static/icons/cv.png"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div id="home">
+        <div
+          class="projects"
+          v-for="app in apps"
+          v-bind:key="app.name"
+          v-on:click="currentApp = app"
+          style="cursor: pointer"
+        >
+          <div
+            v-bind:class="['project', {active: currentApp.name === app.name}]"
+          >
+            {{app.name}}
+          </div>
+        </div>
+        <br />
+        <br />
+        <keep-alive>
+          <component v-bind:is="currentApp.component"></component>
+        </keep-alive>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://vuejs.org/js/vue.js"></script>
+  <script src="./static/home-main.js"></script>
+</html>

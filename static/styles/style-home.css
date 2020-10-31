@@ -1,0 +1,173 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+figcaption {
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+}
+
+.alter_size {
+    width: 100%;
+    height: 100%;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+  }
+
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+}
+
+.folio {
+    font-family: 'Nunito', sans-serif;
+    border: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.folio__body--intro {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.folio__navigation {
+    display: inline-flex;
+    
+}
+
+.folio__titlebar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.github {
+    display:flex;
+    height: 20px;
+    width: 20px;
+}
+
+.header {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    letter-spacing: 5px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.intro__urbanPlanning {
+    display: flex;
+    width: 45%;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+}
+
+.intro__sketchUp {
+    width: 45%;
+    text-align: justify;
+    font-family: 'Nunito', sans-serif;
+    top: 0;
+}
+
+.links {
+    margin-left: auto;
+    margin-right: 0px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.name {
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+}
+
+.portfolio {
+    margin-left: 30px;
+    width: 100%;
+}
+
+.projects {
+    display: inline-flex;
+    font-family: 'Nunito', sans-serif;
+}
+
+.project {
+    padding: 15px;
+}
+
+.project__sketchUp {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    border-width: 1px;
+    border-radius: 15px;
+}
+
+.project__sketchUp--description {
+    padding: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
+
+.project__sketchUp--photo {
+    height: 80%;
+    width: 80%;
+}
+
+
+.project__sketchUp--showcase {
+    display: inline-flex;
+    align-items: baseline;
+}
+
+.project__sketchUp--title {
+    margin: 10px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+}
+
+.project.active {
+    background-color: #F8F8F8;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.sketchUp {
+    display: inline-flex;
+    width: auto;
+}
+
+.softwareDev {
+    display: flex;
+}
+
+.title {
+    display: flex;
+}
+
+.urbanPlanning {
+    display: flex;
+}
+
+.wrapper {
+    margin: 25px;
+}
