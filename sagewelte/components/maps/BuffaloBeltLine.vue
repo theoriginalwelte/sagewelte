@@ -18,7 +18,7 @@
 			</vl-layer-tile>
 
 			<vl-layer-vector>
-				<vl-source-vector :url="url">
+				<vl-source-vector :url="url" :projection="projection">
 					<vl-style-box>
 						<vl-style-circle :radius="5">
 							<vl-style-fill color="#FFFFFF"></vl-style-fill>
@@ -35,7 +35,8 @@
 export default {
 	data() {
 		return {
-			url: "../../src/maps/buffalo-belt-line/buffalo_rail_extension.geojson",
+			projection: "EPSG:4326",
+			url: "../src/maps/buffalo-belt-line/rail.geojson",
 			zoom: 13,
 			center: [-8779318.203122, 5298450.17],
 			rotation: 0,
