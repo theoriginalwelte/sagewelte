@@ -1,46 +1,71 @@
 <template>
 	<div>
 		<h1>Buffalo Belt Line • Reformed</h1>
-		<vl-map
-			:load-tiles-while-animating="true"
-			:load-tiles-while-interacting="true"
-			style="height: 575px;"
-			data-projection="EPSG:3857"
-		>
-			<vl-view
-				:zoom.sync="zoom"
-				:center.sync="center"
-				:rotation.sync="rotation"
-			></vl-view>
-
-			<vl-layer-tile>
-				<vl-source-osm></vl-source-osm>
-			</vl-layer-tile>
-
-			<vl-layer-vector>
-				<vl-source-vector :url="url" :projection="projection">
-					<vl-style-box>
-						<vl-style-circle :radius="5">
-							<vl-style-fill color="#FFFFFF"></vl-style-fill>
-							<vl-stile-stroke color="#000000"></vl-stile-stroke>
-						</vl-style-circle>
-					</vl-style-box>
-				</vl-source-vector>
-			</vl-layer-vector>
-		</vl-map>
+		<div id="map-buffalobeltline" style="height: 590px"></div>
 	</div>
 </template>
 
 <script>
+import Map from "ol/Map";
+import View from "ol/View";
+import TileLayer from "ol/layer/Tile";
+import VectorLayer from "ol/layer/Vector";
+import VectorSource from "ol/source/Vector";
+import GeoJSON from "ol/format/GeoJSON";
+import OSM from "ol/source/OSM";
+import Circle from "ol/style/Circle";
+import Fill from "ol/style/Fill";
+import Stroke from "ol/style/Stroke";
+import Style from "ol/style/Style";
+import Text from "ol/style/Text";
+
 export default {
 	data() {
-		return {
-			projection: "EPSG:4326",
-			url: "../src/maps/buffalo-belt-line/rail.geojson",
-			zoom: 13,
-			center: [-8779318.203122, 5298450.17],
-			rotation: 0,
-		};
+		return {};
+	},
+	mounted() {
+		var osm = new TileLayer({
+			source: new OSM(),
+		});
+
+		var railStyle = new Style({
+			image: new Circle({
+				fill: new Fill({
+					color: "#FFFFFF",
+				}),
+				stroke: new Stroke({
+					color: "#000000",
+					width: 2,
+				}),
+				radius: 5,
+			}),
+			text: new Text({
+				font: "12px Tahoma, sans-serif",
+				text: "",
+				offsetX: 30,
+			}),
+		});
+
+		var railStations = new VectorLayer({
+			source: new VectorSource({
+				url:
+					"https://raw.githubusercontent.com/theoriginalwelte/sagewelte/origin/sagewelte/src/maps/buffalo-belt-line/rail.geojson",
+				format: new GeoJSON(),
+			}),
+			style: function(feature) {
+				railStyle.getText().setText(feature.get("Name"));
+				return railStyle;
+			},
+		});
+
+		new Map({
+			layers: [osm, railStations],
+			target: "map-buffalobeltline",
+			view: new View({
+				center: [-8779270.429979, 5298636.074706],
+				zoom: 13,
+			}),
+		});
 	},
 };
 </script>
