@@ -28,6 +28,29 @@ export default {
 			source: new OSM(),
 		});
 
+		var busRoute3 = new VectorLayer({
+			source: new VectorSource({
+				format: new GeoJSON(),
+				url: "",
+			}),
+		});
+
+		var busRoute12 = new VectorLayer({
+			source: new VectorSource({
+				format: new GeoJSON(),
+				url:
+					"https://raw.githubusercontent.com/theoriginalwelte/sagewelte/origin/sagewelte/src/maps/buffalo-belt-line/12.geojson",
+			}),
+			style: new Style({
+				stroke: new Stroke({
+					color: "#000000",
+				}),
+				fill: new Fill({
+					color: "#000000",
+				}),
+			}),
+		});
+
 		var railStyle = new Style({
 			image: new Circle({
 				fill: new Fill({
@@ -59,7 +82,7 @@ export default {
 		});
 
 		new Map({
-			layers: [osm, railStations],
+			layers: [osm, railStations, busRoute12],
 			target: "map-buffalobeltline",
 			view: new View({
 				center: [-8779270.429979, 5298636.074706],
