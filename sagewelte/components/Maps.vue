@@ -1,6 +1,21 @@
 <template>
 	<div id="maps">
-		<BuffaloBeltLine></BuffaloBeltLine>
+		<div v-on:mouseenter="active = !active" v-on:mouseleave="active = !active">
+			<img
+				src="../src/imgs/map.png"
+				style="width: 4%; height: 4%; vertical-align: middle; margin-right: 2%;"
+			/>
+			<div
+				v-for="map in maps"
+				:key="map[1]"
+				v-show="active"
+				v-on:click="currentMap = map[0]"
+				style="display: inline-flex; justify-content: center; margin-left: 4%; font-family: 'Roboto', sans-serif"
+			>
+				{{ map[1] }}
+			</div>
+		</div>
+		<component :is="currentMap"></component>
 	</div>
 </template>
 
@@ -9,9 +24,18 @@ import BuffaloBeltLine from "./maps/BuffaloBeltLine.vue";
 
 export default {
 	data() {
-		return {};
+		return {
+			maps: [[BuffaloBeltLine, "Buffalo Belt Line"]],
+			currentMap: BuffaloBeltLine,
+			active: false,
+		};
 	},
 	name: "Maps",
+	computed: {
+		activeMap: function() {
+			return this.currentMap;
+		},
+	},
 	components: {
 		BuffaloBeltLine,
 	},

@@ -1,24 +1,15 @@
-# sagewelte
+# Sage Welte • Personal Website
 
-## Project setup
-```
-npm install
-```
+## Project Directory
 
-### Compiles and hot-reloads for development
 ```
-npm run serve
+sagewelte
+    | -- dist
+        | -- css
+            | -- app.7f24466e.css
+        | -- img
+            | -- stamp.38d12613.png
+        | -- js
+            | -- app.7c573688.js
+            | -- chunk-vendors.218cd9f5.js
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
