@@ -83,6 +83,34 @@ export default {
 			}),
 		});
 
+		var busRoute6 = new VectorLayer({
+			source: new VectorSource({
+				format: new GeoJSON(),
+				url:
+					"https://raw.githubusercontent.com/theoriginalwelte/sagewelte/origin/sagewelte/src/maps/buffalo-belt-line/bus-routes/6.geojson",
+			}),
+			style: new Style({
+				stroke: new Stroke({
+					color: "#A7844B",
+					width: 3,
+				}),
+			}),
+		});
+
+		var busRoute8 = new VectorLayer({
+			source: new VectorSource({
+				format: new GeoJSON(),
+				url:
+					"https://raw.githubusercontent.com/theoriginalwelte/sagewelte/origin/sagewelte/src/maps/buffalo-belt-line/bus-routes/8.geojson",
+			}),
+			style: new Style({
+				stroke: new Stroke({
+					color: "#4B91A7",
+					width: 3,
+				}),
+			}),
+		});
+
 		var busRoute12 = new VectorLayer({
 			source: new VectorSource({
 				format: new GeoJSON(),
@@ -97,6 +125,186 @@ export default {
 			}),
 		});
 
+		var busRoute14 = new VectorLayer({
+			source: new VectorSource({
+				format: new GeoJSON(),
+				url:
+					"https://raw.githubusercontent.com/theoriginalwelte/sagewelte/origin/sagewelte/src/maps/buffalo-belt-line/bus-routes/14.geojson",
+			}),
+			style: new Style({
+				stroke: new Stroke({
+					color: "#7E317E",
+					width: 3,
+				}),
+			}),
+		});
+
+		var busRoute16 = new VectorLayer({
+			source: new VectorSource({
+				format: new GeoJSON(),
+				url:
+					"https://raw.githubusercontent.com/theoriginalwelte/sagewelte/origin/sagewelte/src/maps/buffalo-belt-line/bus-routes/16.geojson",
+			}),
+			style: new Style({
+				stroke: new Stroke({
+					color: "#E853A0",
+					width: 3,
+				}),
+			}),
+		});
+
+		var busRoute20 = new VectorLayer({
+			source: new VectorSource({
+				format: new GeoJSON(),
+				url:
+					"https://raw.githubusercontent.com/theoriginalwelte/sagewelte/origin/sagewelte/src/maps/buffalo-belt-line/bus-routes/20.geojson",
+			}),
+			style: new Style({
+				stroke: new Stroke({
+					color: "#7BB701",
+					width: 3,
+				}),
+			}),
+		});
+
+		var busRoute22 = new VectorLayer({
+			source: new VectorSource({
+				format: new GeoJSON(),
+				url:
+					"https://raw.githubusercontent.com/theoriginalwelte/sagewelte/origin/sagewelte/src/maps/buffalo-belt-line/bus-routes/22.geojson",
+			}),
+			style: new Style({
+				stroke: new Stroke({
+					color: "#A54ED0",
+					width: 3,
+				}),
+			}),
+		});
+		var busRoute23 = new VectorLayer({
+			source: new VectorSource({
+				format: new GeoJSON(),
+				url:
+					"https://raw.githubusercontent.com/theoriginalwelte/sagewelte/origin/sagewelte/src/maps/buffalo-belt-line/bus-routes/23.geojson",
+			}),
+			style: new Style({
+				stroke: new Stroke({
+					color: "#054126",
+					width: 3,
+				}),
+			}),
+		});
+
+		var busRoute25 = new VectorLayer({
+			source: new VectorSource({
+				format: new GeoJSON(),
+				url:
+					"https://raw.githubusercontent.com/theoriginalwelte/sagewelte/origin/sagewelte/src/maps/buffalo-belt-line/bus-routes/25.geojson",
+			}),
+			style: new Style({
+				stroke: new Stroke({
+					color: "#8F03E4",
+					width: 3,
+				}),
+			}),
+		});
+
+		var busRoute26 = new VectorLayer({
+			source: new VectorSource({
+				format: new GeoJSON(),
+				url:
+					"https://raw.githubusercontent.com/theoriginalwelte/sagewelte/origin/sagewelte/src/maps/buffalo-belt-line/bus-routes/26.geojson",
+			}),
+			style: new Style({
+				stroke: new Stroke({
+					color: "#A57E01",
+					width: 3,
+				}),
+			}),
+		});
+
+		var busRoute40 = new VectorLayer({
+			source: new VectorSource({
+				format: new GeoJSON(),
+				url:
+					"https://raw.githubusercontent.com/theoriginalwelte/sagewelte/origin/sagewelte/src/maps/buffalo-belt-line/bus-routes/40.geojson",
+			}),
+			style: new Style({
+				stroke: new Stroke({
+					color: "#B7E371",
+					width: 3,
+				}),
+			}),
+		});
+
+		var busRoute42 = new VectorLayer({
+			source: new VectorSource({
+				format: new GeoJSON(),
+				url:
+					"https://raw.githubusercontent.com/theoriginalwelte/sagewelte/origin/sagewelte/src/maps/buffalo-belt-line/bus-routes/42.geojson",
+			}),
+			style: new Style({
+				stroke: new Stroke({
+					color: "#C80D5F",
+					width: 3,
+				}),
+			}),
+		});
+
+		var busRoute70 = new VectorLayer({
+			source: new VectorSource({
+				format: new GeoJSON(),
+				url:
+					"https://raw.githubusercontent.com/theoriginalwelte/sagewelte/origin/sagewelte/src/maps/buffalo-belt-line/bus-routes/70.geojson",
+			}),
+			style: new Style({
+				stroke: new Stroke({
+					color: "#4D12A0",
+					width: 3,
+				}),
+			}),
+		});
+
+		var busRoute72 = new VectorLayer({
+			source: new VectorSource({
+				format: new GeoJSON(),
+				url:
+					"https://raw.githubusercontent.com/theoriginalwelte/sagewelte/origin/sagewelte/src/maps/buffalo-belt-line/bus-routes/72.geojson",
+			}),
+			style: new Style({
+				stroke: new Stroke({
+					color: "#5E01A7",
+					width: 3,
+				}),
+			}),
+		});
+
+		var busRoute74 = new VectorLayer({
+			source: new VectorSource({
+				format: new GeoJSON(),
+				url:
+					"https://raw.githubusercontent.com/theoriginalwelte/sagewelte/origin/sagewelte/src/maps/buffalo-belt-line/bus-routes/74.geojson",
+			}),
+			style: new Style({
+				stroke: new Stroke({
+					color: "#451326",
+					width: 3,
+				}),
+			}),
+		});
+
+		var busRoute76 = new VectorLayer({
+			source: new VectorSource({
+				format: new GeoJSON(),
+				url:
+					"https://raw.githubusercontent.com/theoriginalwelte/sagewelte/origin/sagewelte/src/maps/buffalo-belt-line/bus-routes/76.geojson",
+			}),
+			style: new Style({
+				stroke: new Stroke({
+					color: "#7DE4F6",
+					width: 3,
+				}),
+			}),
+		});
 		var railStyle = new Style({
 			image: new Circle({
 				fill: new Fill({
@@ -109,9 +317,9 @@ export default {
 				radius: 5,
 			}),
 			text: new Text({
-				font: "12px Tahoma, sans-serif",
+				font: "11 px Tahoma, sans-serif",
 				text: "",
-				offsetX: 30,
+				offsetX: 20,
 			}),
 		});
 
@@ -128,11 +336,32 @@ export default {
 		});
 
 		new Map({
-			layers: [osm, railStations, busRoute3, busRoute5, busRoute12],
+			layers: [
+				osm,
+				railStations,
+				busRoute3,
+				busRoute5,
+				busRoute6,
+				busRoute8,
+				busRoute12,
+				busRoute14,
+				busRoute16,
+				busRoute20,
+				busRoute22,
+				busRoute23,
+				busRoute25,
+				busRoute26,
+				busRoute40,
+				busRoute42,
+				busRoute70,
+				busRoute72,
+				busRoute74,
+				busRoute76,
+			],
 			target: "map-buffalobeltline",
 			view: new View({
 				center: [-8779270.429979, 5298636.074706],
-				zoom: 12,
+				zoom: 12.5,
 			}),
 		});
 	},

@@ -14,7 +14,7 @@
 				/></a>
 				<div
 					v-for="page in pages"
-					:key="page"
+					:key="page[1]"
 					:class="['page', { active: currentPage === page[0] }]"
 					v-on:click="currentPage = page[0]"
 				>

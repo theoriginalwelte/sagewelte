@@ -3,6 +3,7 @@ node_modules
 /components
 /src/App.vue
 /src/main.js
+/public
 
 # local env files
 .env.local
