@@ -1,16 +1,16 @@
 <template>
-	<div id="maps">
+	<div id="maps" style="overflow-y: scroll; height: 99%; position: absolute;">
 		<div v-on:mouseenter="active = !active" v-on:mouseleave="active = !active">
 			<img
 				src="../src/imgs/map.png"
-				style="width: 4%; height: 4%; vertical-align: middle; margin-right: 2%;"
+				style="width: 3%; height: 3%; vertical-align: -50%; margin-right: 2%;"
 			/>
 			<div
 				v-for="map in maps"
 				:key="map[1]"
 				v-show="active"
 				v-on:click="currentMap = map[0]"
-				style="display: inline-flex; justify-content: center; margin-left: 4%; font-family: 'Roboto', sans-serif"
+				style="cursor: pointer; display: inline-flex; justify-content: center; margin-left: 2%; font-family: 'Roboto', sans-serif"
 			>
 				{{ map[1] }}
 			</div>
@@ -23,6 +23,7 @@
 import BuffaloBeltLine from "./maps/BuffaloBeltLine.vue";
 
 export default {
+	name: "TransportationPlanning",
 	data() {
 		return {
 			maps: [[BuffaloBeltLine, "Buffalo Belt Line"]],
@@ -30,7 +31,6 @@ export default {
 			active: false,
 		};
 	},
-	name: "Maps",
 	computed: {
 		activeMap: function() {
 			return this.currentMap;

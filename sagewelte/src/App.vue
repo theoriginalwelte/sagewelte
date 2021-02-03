@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import Maps from "/components/Maps.vue";
+import TransportationPlanning from "/components/TransportationPlanning.vue";
 import UrbanPlanning from "/components/UrbanPlanning.vue";
 
 export default {
@@ -36,10 +36,9 @@ export default {
 		return {
 			pages: [
 				[UrbanPlanning, "Urban Planning"],
-				[Maps, "Maps"],
+				[TransportationPlanning, "Transportation Planning"],
 			],
 			currentPage: UrbanPlanning,
-			pageNames: ["Maps", "Urban Planning"],
 		};
 	},
 	computed: {

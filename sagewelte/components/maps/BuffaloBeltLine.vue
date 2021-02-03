@@ -1,5 +1,5 @@
 <template>
-	<div style="overflow-y: scroll">
+	<div>
 		<div>
 			<h1 style="margin-right: 30px; margin-bottom: 20px;">
 				Buffalo Belt Line
@@ -11,7 +11,7 @@
 		<div style="display: inline-flex;">
 			<div id="map-buffalobeltline" style="height: 450px; width: 70%;"></div>
 			<div
-				style="font-family: 'Nanum Gothic', sans-serif; margin-left: 30px; margin-right: 30px; width: 30%; text-align: justify;"
+				style="font-family: 'Nanum Gothic', sans-serif; margin-left: 20px; margin-right: 30px; width: 30%; text-align: justify;"
 			>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas doloribus
 				numquam amet perferendis iusto ipsam repudiandae aspernatur provident
@@ -27,6 +27,239 @@
 				quae error, ipsa repudiandae, neque ducimus nesciunt beatae sit
 				voluptate eius rerum placeat voluptatum natus illo. Ipsa sequi eligendi,
 				recusandae atque sint enim
+			</div>
+		</div>
+		<br />
+		<br />
+		<div style="display: flex;">
+			<div id="busRoutesToggle">
+				<div id="addBusLayers">
+					Add Bus Layers
+				</div>
+				<div style="margin-left: 5%; margin-top: 1.5%;">
+					<div>
+						<input
+							type="checkbox"
+							name="busRoute3"
+							id="busRoute3"
+							style="margin-right: 10px;"
+						/>
+						<label style="font-family: 'Nunito', sans-serif;" for="busRoute3"
+							>Route 3</label
+						>
+					</div>
+					<div>
+						<input
+							type="checkbox"
+							name="busRoute5"
+							style="margin-right: 10px;"
+							id="busRoute5"
+						/>
+						<label style="font-family: 'Nunito', sans-serif;" for="busRoute5"
+							>Route 5</label
+						>
+					</div>
+					<div>
+						<input
+							type="checkbox"
+							name="busRoute6"
+							style="margin-right: 10px;"
+							id="busRoute6"
+						/>
+						<label style="font-family: 'Nunito', sans-serif;" for="busRoute6"
+							>Route 6</label
+						>
+					</div>
+					<div>
+						<input
+							type="checkbox"
+							name="busRoute8"
+							style="margin-right: 10px;"
+							id="busRoute8"
+						/>
+						<label style="font-family: 'Nunito', sans-serif;" for="busRoute8"
+							>Route 8</label
+						>
+					</div>
+					<div>
+						<input
+							type="checkbox"
+							name="busRoute12"
+							style="margin-right: 10px;"
+							id="busRoute12"
+						/>
+						<label style="font-family: 'Nunito', sans-serif;" for="busRoute12"
+							>Route 12</label
+						>
+					</div>
+					<div>
+						<input
+							type="checkbox"
+							name="busRoute14"
+							style="margin-right: 10px;"
+							id="busRoute14"
+						/>
+						<label style="font-family: 'Nunito', sans-serif;" for="busRoute14"
+							>Route 14</label
+						>
+					</div>
+					<div>
+						<input
+							type="checkbox"
+							name="busRoute16"
+							style="margin-right: 10px;"
+							id="busRoute16"
+						/>
+						<label style="font-family: 'Nunito', sans-serif;" for="busRoute16"
+							>Route 16</label
+						>
+					</div>
+				</div>
+				<div style="margin-left: 5%; margin-top: 1.5%">
+					<div>
+						<input
+							type="checkbox"
+							name="busRoute20"
+							style="margin-right: 10px;"
+							id="busRoute20"
+						/>
+						<label style="font-family: 'Nunito', sans-serif;" for="busRoute20"
+							>Route 20</label
+						>
+					</div>
+					<div>
+						<input
+							type="checkbox"
+							name="busRoute22"
+							style="margin-right: 10px;"
+							id="busRoute22"
+						/>
+						<label style="font-family: 'Nunito', sans-serif;" for="busRoute22"
+							>Route 22</label
+						>
+					</div>
+					<div>
+						<input
+							type="checkbox"
+							name="busRoute23"
+							style="margin-right: 10px;"
+							id="busRoute23"
+						/>
+						<label style="font-family: 'Nunito', sans-serif;" for="busRoute23"
+							>Route 23</label
+						>
+					</div>
+					<div>
+						<input
+							type="checkbox"
+							name="busRoute24"
+							style="margin-right: 10px;"
+							id="busRoute24"
+						/>
+						<label style="font-family: 'Nunito', sans-serif;" for="busRoute24"
+							>Route 24</label
+						>
+					</div>
+					<div>
+						<input
+							type="checkbox"
+							name="busRoute25"
+							style="margin-right: 10px;"
+							id="busRoute25"
+						/>
+						<label style="font-family: 'Nunito', sans-serif;" for="busRoute25"
+							>Route 25</label
+						>
+					</div>
+					<div>
+						<input
+							type="checkbox"
+							name="busRoute26"
+							style="margin-right: 10px;"
+							id="busRoute26"
+						/>
+						<label style="font-family: 'Nunito', sans-serif;" for="busRoute26"
+							>Route 26</label
+						>
+					</div>
+					<div>
+						<input
+							type="checkbox"
+							name="busRoute40"
+							style="margin-right: 10px;"
+							id="busRoute40"
+						/>
+						<label style="font-family: 'Nunito', sans-serif;" for="busRoute40"
+							>Route 40</label
+						>
+					</div>
+				</div>
+				<div style="margin-left: 5%; margin-top: 1.5%">
+					<div>
+						<input
+							type="checkbox"
+							name="busRoute42"
+							style="margin-right: 10px;"
+							id="busRoute42"
+						/>
+						<label style="font-family: 'Nunito', sans-serif;" for="busRoute42"
+							>Route 42</label
+						>
+					</div>
+					<div>
+						<input
+							type="checkbox"
+							name="busRoute70"
+							style="margin-right: 10px;"
+							id="busRoute70"
+						/>
+						<label style="font-family: 'Nunito', sans-serif;" for="busRoute70"
+							>Route 70</label
+						>
+					</div>
+					<div>
+						<input
+							type="checkbox"
+							name="busRoute72"
+							style="margin-right: 10px;"
+							id="busRoute72"
+						/>
+						<label style="font-family: 'Nunito', sans-serif;" for="busRoute72"
+							>Route 72</label
+						>
+					</div>
+					<div>
+						<input
+							type="checkbox"
+							name="busRoute74"
+							style="margin-right: 10px;"
+							id="busRoute74"
+						/>
+						<label style="font-family: 'Nunito', sans-serif;" for="busRoute74"
+							>Route 74</label
+						>
+					</div>
+					<div>
+						<input
+							type="checkbox"
+							name="busRoute76"
+							style="margin-right: 10px; "
+							id="busRoute76"
+						/>
+						<label style="font-family: 'Nunito', sans-serif;" for="busRoute76"
+							>Route 76</label
+						>
+					</div>
+				</div>
+			</div>
+			<div
+				style="font-family: 'Nanum Gothic', sans-serif; margin-left: 20px; margin-right: 30px; width: 30%; text-align: justify;"
+			>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas doloribus
+				numquam amet perferendis iusto ipsam repudiandae aspernatur provident
+				repellendus maxime quis modi necessitatibus, facere illo inventore nisi
+				omnis, tempora fugit dolorem voluptate? Voluptatibus facilis mollitia
+				modi magnam dolor voluptatem quos! Reprehenderit cum velit harum
 			</div>
 		</div>
 	</div>
@@ -50,6 +283,9 @@ export default {
 	data() {
 		return {};
 	},
+
+	methods: {},
+
 	mounted() {
 		var osm = new TileLayer({
 			source: new OSM(),
@@ -180,6 +416,7 @@ export default {
 				}),
 			}),
 		});
+
 		var busRoute23 = new VectorLayer({
 			source: new VectorSource({
 				format: new GeoJSON(),
@@ -189,6 +426,20 @@ export default {
 			style: new Style({
 				stroke: new Stroke({
 					color: "#054126",
+					width: 3,
+				}),
+			}),
+		});
+
+		var busRoute24 = new VectorLayer({
+			source: new VectorSource({
+				format: new GeoJSON(),
+				url:
+					"https://raw.githubusercontent.com/theoriginalwelte/sagewelte/origin/sagewelte/src/maps/buffalo-belt-line/bus-routes/24.geojson",
+			}),
+			style: new Style({
+				stroke: new Stroke({
+					color: "#AD0E4C",
 					width: 3,
 				}),
 			}),
@@ -305,6 +556,7 @@ export default {
 				}),
 			}),
 		});
+
 		var railStyle = new Style({
 			image: new Circle({
 				fill: new Fill({
@@ -317,7 +569,7 @@ export default {
 				radius: 5,
 			}),
 			text: new Text({
-				font: "11 px Tahoma, sans-serif",
+				font: "14px Tahoma, sans-serif",
 				text: "",
 				offsetX: 20,
 			}),
@@ -335,40 +587,272 @@ export default {
 			},
 		});
 
-		new Map({
-			layers: [
-				osm,
-				railStations,
-				busRoute3,
-				busRoute5,
-				busRoute6,
-				busRoute8,
-				busRoute12,
-				busRoute14,
-				busRoute16,
-				busRoute20,
-				busRoute22,
-				busRoute23,
-				busRoute25,
-				busRoute26,
-				busRoute40,
-				busRoute42,
-				busRoute70,
-				busRoute72,
-				busRoute74,
-				busRoute76,
-			],
+		var buffaloBeltLine = new Map({
+			layers: [osm, railStations],
 			target: "map-buffalobeltline",
 			view: new View({
 				center: [-8779270.429979, 5298636.074706],
 				zoom: 12.5,
 			}),
 		});
+
+		document.getElementById("addBusLayers").onclick = function addBusLayers() {
+			buffaloBeltLine.addLayer(busRoute3);
+			buffaloBeltLine.addLayer(busRoute5);
+			buffaloBeltLine.addLayer(busRoute6);
+			buffaloBeltLine.addLayer(busRoute8);
+			buffaloBeltLine.addLayer(busRoute12);
+			buffaloBeltLine.addLayer(busRoute14);
+			buffaloBeltLine.addLayer(busRoute16);
+			buffaloBeltLine.addLayer(busRoute20);
+			buffaloBeltLine.addLayer(busRoute22);
+			buffaloBeltLine.addLayer(busRoute23);
+			buffaloBeltLine.addLayer(busRoute24);
+			buffaloBeltLine.addLayer(busRoute25);
+			buffaloBeltLine.addLayer(busRoute40);
+			buffaloBeltLine.addLayer(busRoute42);
+			buffaloBeltLine.addLayer(busRoute70);
+			buffaloBeltLine.addLayer(busRoute72);
+			buffaloBeltLine.addLayer(busRoute74);
+			buffaloBeltLine.addLayer(busRoute76);
+
+			document.getElementById("busRoute3").checked = true;
+			document.getElementById("busRoute5").checked = true;
+			document.getElementById("busRoute6").checked = true;
+			document.getElementById("busRoute8").checked = true;
+			document.getElementById("busRoute12").checked = true;
+			document.getElementById("busRoute14").checked = true;
+			document.getElementById("busRoute16").checked = true;
+			document.getElementById("busRoute20").checked = true;
+			document.getElementById("busRoute22").checked = true;
+			document.getElementById("busRoute23").checked = true;
+			document.getElementById("busRoute24").checked = true;
+			document.getElementById("busRoute25").checked = true;
+			document.getElementById("busRoute26").checked = true;
+			document.getElementById("busRoute40").checked = true;
+			document.getElementById("busRoute42").checked = true;
+			document.getElementById("busRoute70").checked = true;
+			document.getElementById("busRoute72").checked = true;
+			document.getElementById("busRoute74").checked = true;
+			document.getElementById("busRoute76").checked = true;
+		};
+
+		document.getElementById("busRoute3").onclick = function busRoute3Toggle() {
+			if (document.getElementById("busRoute3").checked === true) {
+				busRoute3.setVisible(true);
+			} else {
+				busRoute3.setVisible(false);
+			}
+		};
+
+		document.getElementById("busRoute5").onclick = function busRoute5Toggle() {
+			if (document.getElementById("busRoute5").checked === true) {
+				busRoute5.setVisible(true);
+			} else {
+				busRoute5.setVisible(false);
+			}
+		};
+
+		document.getElementById("busRoute6").onclick = function busRoute6Toggle() {
+			if (document.getElementById("busRoute6").checked === true) {
+				busRoute6.setVisible(true);
+			} else {
+				busRoute6.setVisible(false);
+			}
+		};
+
+		document.getElementById("busRoute8").onclick = function busRoute8Toggle() {
+			if (document.getElementById("busRoute8").checked === true) {
+				busRoute8.setVisible(true);
+			} else {
+				busRoute8.setVisible(false);
+			}
+		};
+
+		document.getElementById(
+			"busRoute12"
+		).onclick = function busRoute12Toggle() {
+			if (document.getElementById("busRoute12").checked === true) {
+				busRoute12.setVisible(true);
+			} else {
+				busRoute12.setVisible(false);
+			}
+		};
+
+		document.getElementById(
+			"busRoute14"
+		).onclick = function busRoute14Toggle() {
+			if (document.getElementById("busRoute14").checked === true) {
+				busRoute14.setVisible(true);
+			} else {
+				busRoute14.setVisible(false);
+			}
+		};
+
+		document.getElementById(
+			"busRoute16"
+		).onclick = function busRoute16Toggle() {
+			if (document.getElementById("busRoute16").checked === true) {
+				busRoute16.setVisible(true);
+			} else {
+				busRoute16.setVisible(false);
+			}
+		};
+
+		document.getElementById(
+			"busRoute20"
+		).onclick = function busRoute20Toggle() {
+			if (document.getElementById("busRoute20").checked === true) {
+				busRoute20.setVisible(true);
+			} else {
+				busRoute20.setVisible(false);
+			}
+		};
+
+		document.getElementById(
+			"busRoute22"
+		).onclick = function busRoute22Toggle() {
+			if (document.getElementById("busRoute22").checked === true) {
+				busRoute22.setVisible(true);
+			} else {
+				busRoute22.setVisible(false);
+			}
+		};
+
+		document.getElementById(
+			"busRoute23"
+		).onclick = function busRoute23Toggle() {
+			if (document.getElementById("busRoute23").checked === true) {
+				busRoute23.setVisible(true);
+			} else {
+				busRoute23.setVisible(false);
+			}
+		};
+
+		document.getElementById(
+			"busRoute24"
+		).onclick = function busRoute24Toggle() {
+			if (document.getElementById("busRoute24").checked === true) {
+				busRoute24.setVisible(true);
+			} else {
+				busRoute24.setVisible(false);
+			}
+		};
+
+		document.getElementById(
+			"busRoute25"
+		).onclick = function busRoute25Toggle() {
+			if (document.getElementById("busRoute25").checked === true) {
+				busRoute25.setVisible(true);
+			} else {
+				busRoute25.setVisible(false);
+			}
+		};
+
+		document.getElementById(
+			"busRoute26"
+		).onclick = function busRoute26Toggle() {
+			if (document.getElementById("busRoute26").checked === true) {
+				busRoute26.setVisible(true);
+			} else {
+				busRoute26.setVisible(false);
+			}
+		};
+
+		document.getElementById(
+			"busRoute40"
+		).onclick = function busRoute40Toggle() {
+			if (document.getElementById("busRoute40").checked === true) {
+				busRoute40.setVisible(true);
+			} else {
+				busRoute40.setVisible(false);
+			}
+		};
+
+		document.getElementById(
+			"busRoute42"
+		).onclick = function busRoute42Toggle() {
+			if (document.getElementById("busRoute42").checked === true) {
+				busRoute42.setVisible(true);
+			} else {
+				busRoute42.setVisible(false);
+			}
+		};
+
+		document.getElementById(
+			"busRoute70"
+		).onclick = function busRoute70Toggle() {
+			if (document.getElementById("busRoute70").checked === true) {
+				busRoute70.setVisible(true);
+			} else {
+				busRoute70.setVisible(false);
+			}
+		};
+
+		document.getElementById(
+			"busRoute72"
+		).onclick = function busRoute72Toggle() {
+			if (document.getElementById("busRoute72").checked === true) {
+				busRoute72.setVisible(true);
+			} else {
+				busRoute72.setVisible(false);
+			}
+		};
+
+		document.getElementById(
+			"busRoute74"
+		).onclick = function busRoute74Toggle() {
+			if (document.getElementById("busRoute74").checked === true) {
+				busRoute74.setVisible(true);
+			} else {
+				busRoute74.setVisible(false);
+			}
+		};
+
+		document.getElementById(
+			"busRoute76"
+		).onclick = function busRoute76Toggle() {
+			if (document.getElementById("busRoute76").checked === true) {
+				busRoute76.setVisible(true);
+			} else {
+				busRoute76.setVisible(false);
+			}
+		};
 	},
 };
 </script>
 
 <style scoped>
+#addBusLayers {
+	border-radius: 15px;
+	width: 8em;
+	height: 3em;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	background-color: #f6f6f6;
+	transition: background-color 0.5s;
+	font-family: "Nunito", sans-serif;
+}
+
+#addBusLayers:hover {
+	background-color: #d8d8d8;
+}
+
+#busRoutesToggle {
+	display: flex;
+	flex-wrap: column;
+	align-items: center;
+	justify-content: center;
+	padding: 7px;
+	height: 12em;
+	width: 69%;
+	border-radius: 15px;
+	border-style: solid;
+	border-color: #eaeaea;
+	border-width: 1px;
+}
+
 h1 {
 	font-family: "Nunito", sans-serif;
 	text-align: right;
