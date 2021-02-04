@@ -23,7 +23,7 @@
 import BuffaloBeltLine from "./maps/BuffaloBeltLine.vue";
 
 export default {
-	name: "TransportationPlanning",
+	name: "Transit",
 	data() {
 		return {
 			maps: [[BuffaloBeltLine, "Buffalo Belt Line"]],

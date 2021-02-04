@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import TransportationPlanning from "/components/TransportationPlanning.vue";
+import Transit from "/components/Transit.vue";
 import UrbanPlanning from "/components/UrbanPlanning.vue";
 
 export default {
@@ -36,7 +36,7 @@ export default {
 		return {
 			pages: [
 				[UrbanPlanning, "Urban Planning"],
-				[TransportationPlanning, "Transportation Planning"],
+				[Transit, "Transit"],
 			],
 			currentPage: UrbanPlanning,
 		};
@@ -63,13 +63,10 @@ export default {
 	border-radius: 10px;
 }
 
-.page::selection {
-	background-color: transparent;
-	transition: font-size 3s;
-}
-
 .page:hover {
 	transition: background-color 0.5s;
+
+	transition: font-size 0.5s;
 	background-color: #e0e0e0;
 }
 
