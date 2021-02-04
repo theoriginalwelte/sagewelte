@@ -57,7 +57,7 @@ export default {
 	padding: 10px;
 	font-family: "Nunito", sans-serif;
 	font-weight: 200;
-	transition: background 0.5s;
+	transition: background-color 0.5s;
 	transition: color 0.5s;
 	transition: font-size 0.5s;
 	border-radius: 10px;
@@ -65,9 +65,11 @@ export default {
 
 .page::selection {
 	background-color: transparent;
+	transition: font-size 3s;
 }
 
 .page:hover {
+	transition: background-color 0.5s;
 	background-color: #e0e0e0;
 }
 

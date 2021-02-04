@@ -33,16 +33,21 @@
 		<br />
 		<div style="display: flex;">
 			<div id="busRoutesToggle">
-				<div id="addBusLayers">
-					Add Bus Layers
+				<div style="display: flex; flex-direction: column;">
+					<div id="addBusLayers">
+						Add Bus Layers
+					</div>
+					<div id="removeBusLayers">
+						Remove Bus Layers
+					</div>
 				</div>
 				<div style="margin-left: 5%; margin-top: 1.5%;">
 					<div>
 						<input
 							type="checkbox"
 							name="busRoute3"
-							id="busRoute3"
 							style="margin-right: 10px;"
+							id="busRoute3"
 						/>
 						<label style="font-family: 'Nunito', sans-serif;" for="busRoute3"
 							>Route 3</label
@@ -252,14 +257,16 @@
 					</div>
 				</div>
 			</div>
-			<div
-				style="font-family: 'Nanum Gothic', sans-serif; margin-left: 20px; margin-right: 30px; width: 30%; text-align: justify;"
-			>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas doloribus
-				numquam amet perferendis iusto ipsam repudiandae aspernatur provident
-				repellendus maxime quis modi necessitatibus, facere illo inventore nisi
-				omnis, tempora fugit dolorem voluptate? Voluptatibus facilis mollitia
-				modi magnam dolor voluptatem quos! Reprehenderit cum velit harum
+			<div id="railLayerToggle">
+				<h1 style="font-size: 16px;">Belt Line</h1>
+				<div>
+					<div id="addRailStations">Add Rail Stations</div>
+					<div id="removeRailStations">Remove Rail Stations</div>
+				</div>
+				<div>
+					<div id="addRailLine">Add Rail Line</div>
+					<div id="removeRailLine">Remove Rail Line</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -283,8 +290,6 @@ export default {
 	data() {
 		return {};
 	},
-
-	methods: {},
 
 	mounted() {
 		var osm = new TileLayer({
@@ -637,6 +642,49 @@ export default {
 			document.getElementById("busRoute76").checked = true;
 		};
 
+		document.getElementById(
+			"removeBusLayers"
+		).onclick = function removeBusLayers() {
+			buffaloBeltLine.removeLayer(busRoute3);
+			buffaloBeltLine.removeLayer(busRoute5);
+			buffaloBeltLine.removeLayer(busRoute6);
+			buffaloBeltLine.removeLayer(busRoute8);
+			buffaloBeltLine.removeLayer(busRoute12);
+			buffaloBeltLine.removeLayer(busRoute14);
+			buffaloBeltLine.removeLayer(busRoute16);
+			buffaloBeltLine.removeLayer(busRoute20);
+			buffaloBeltLine.removeLayer(busRoute22);
+			buffaloBeltLine.removeLayer(busRoute23);
+			buffaloBeltLine.removeLayer(busRoute24);
+			buffaloBeltLine.removeLayer(busRoute25);
+			buffaloBeltLine.removeLayer(busRoute40);
+			buffaloBeltLine.removeLayer(busRoute42);
+			buffaloBeltLine.removeLayer(busRoute70);
+			buffaloBeltLine.removeLayer(busRoute72);
+			buffaloBeltLine.removeLayer(busRoute74);
+			buffaloBeltLine.removeLayer(busRoute76);
+
+			document.getElementById("busRoute3").checked = false;
+			document.getElementById("busRoute5").checked = false;
+			document.getElementById("busRoute6").checked = false;
+			document.getElementById("busRoute8").checked = false;
+			document.getElementById("busRoute12").checked = false;
+			document.getElementById("busRoute14").checked = false;
+			document.getElementById("busRoute16").checked = false;
+			document.getElementById("busRoute20").checked = false;
+			document.getElementById("busRoute22").checked = false;
+			document.getElementById("busRoute23").checked = false;
+			document.getElementById("busRoute24").checked = false;
+			document.getElementById("busRoute25").checked = false;
+			document.getElementById("busRoute26").checked = false;
+			document.getElementById("busRoute40").checked = false;
+			document.getElementById("busRoute42").checked = false;
+			document.getElementById("busRoute70").checked = false;
+			document.getElementById("busRoute72").checked = false;
+			document.getElementById("busRoute74").checked = false;
+			document.getElementById("busRoute76").checked = false;
+		};
+
 		document.getElementById("busRoute3").onclick = function busRoute3Toggle() {
 			if (document.getElementById("busRoute3").checked === true) {
 				busRoute3.setVisible(true);
@@ -818,14 +866,28 @@ export default {
 				busRoute76.setVisible(false);
 			}
 		};
+
+		document.getElementById(
+			"addRailStations"
+		).onclick = function addRailStations() {
+			buffaloBeltLine.addLayer(railStations);
+		};
+
+		document.getElementById(
+			"removeRailStations"
+		).onclick = function removeRailStations() {
+			buffaloBeltLine.removeLayer(railStations);
+		};
 	},
 };
 </script>
 
 <style scoped>
 #addBusLayers {
+	cursor: default;
 	border-radius: 15px;
-	width: 8em;
+	margin-bottom: 3%;
+	width: 10em;
 	height: 3em;
 	justify-content: center;
 	display: flex;
@@ -839,6 +901,42 @@ export default {
 	background-color: #d8d8d8;
 }
 
+#addRailLine {
+	cursor: default;
+	border-radius: 15px;
+	margin-bottom: 2%;
+	width: 12em;
+	height: 2em;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	background-color: #f6f6f6;
+	transition: background-color 0.5s;
+	font-family: "Nunito", sans-serif;
+}
+
+#addRailLine:hover {
+	background-color: #d8d8d8;
+}
+
+#addRailStations {
+	cursor: default;
+	border-radius: 15px;
+	margin-bottom: 2%;
+	width: 12em;
+	height: 2em;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	background-color: #f6f6f6;
+	transition: background-color 0.5s;
+	font-family: "Nunito", sans-serif;
+}
+
+#addRailStations:hover {
+	background-color: #d8d8d8;
+}
+
 #busRoutesToggle {
 	display: flex;
 	flex-wrap: column;
@@ -846,7 +944,7 @@ export default {
 	justify-content: center;
 	padding: 7px;
 	height: 12em;
-	width: 69%;
+	width: 66%;
 	border-radius: 15px;
 	border-style: solid;
 	border-color: #eaeaea;
@@ -856,5 +954,73 @@ export default {
 h1 {
 	font-family: "Nunito", sans-serif;
 	text-align: right;
+}
+
+#railLayerToggle {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-left: 1.25%;
+	margin-right: 2%;
+	height: 13em;
+	width: 29%;
+	border-radius: 15px;
+	border-style: solid;
+	border-color: #eaeaea;
+	border-width: 1px;
+}
+
+#removeBusLayers {
+	cursor: default;
+	border-radius: 15px;
+	margin-top: 3%;
+	width: 10em;
+	height: 3em;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	background-color: #f6f6f6;
+	transition: background-color 0.5s;
+	font-family: "Nunito", sans-serif;
+}
+
+#removeBusLayers:hover {
+	background-color: #d8d8d8;
+}
+
+#removeRailLine {
+	cursor: default;
+	border-radius: 15px;
+	margin-bottom: 1%;
+	width: 12em;
+	height: 2em;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	background-color: #f6f6f6;
+	transition: background-color 0.5s;
+	font-family: "Nunito", sans-serif;
+}
+
+#removeRailLine:hover {
+	background-color: #d8d8d8;
+}
+
+#removeRailStations {
+	cursor: default;
+	border-radius: 15px;
+	width: 12em;
+	height: 2em;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	background-color: #f6f6f6;
+	transition: background-color 0.5s;
+	font-family: "Nunito", sans-serif;
+}
+
+#removeRailStations:hover {
+	background-color: #d8d8d8;
 }
 </style>
